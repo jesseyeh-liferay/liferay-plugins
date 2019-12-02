@@ -5,8 +5,8 @@
 		<listener-class>com.liferay.samplestruts.servlet.DistributedAttributeServletContextListener</listener-class>
 	</listener>
 	<servlet>
-		<servlet-name>PortletActionServlet</servlet-name>
-		<servlet-class>com.liferay.util.bridges.struts.LiferayPortletServlet</servlet-class>
+		<servlet-name>PortletServlet</servlet-name>
+		<servlet-class>org.apache.portals.bridges.struts.PortletServlet</servlet-class>
 		<init-param>
 			<param-name>config</param-name>
 			<param-value>/WEB-INF/struts-config.xml</param-value>
@@ -17,7 +17,7 @@
 		<servlet-class>com.liferay.samplestruts.servlet.TestSessionServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>PortletActionServlet</servlet-name>
+		<servlet-name>PortletServlet</servlet-name>
 		<url-pattern>/portlet_action/*</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>

@@ -15,7 +15,7 @@
 		</init-param>
 		<init-param>
 			<name>ServletContextProvider</name>
-			<value>com.liferay.util.bridges.struts.LiferayServletContextProviderWrapper</value>
+			<value>com.liferay.samplestruts.struts.PortletServletContextProvider</value>
 		</init-param>
 		<init-param>
 			<name>ViewPage</name>
